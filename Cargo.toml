@@ -1,0 +1,31 @@
+[package]
+name = "fnaop"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["photowey <photowey@gmail.com>"]
+license = "Apache-2.0"
+
+documentation = "https://docs.rs/fnaop"
+repository = "https://github.com/photowey/fnaop"
+homepage = "https://github.com/photowey/fnaop"
+
+description = """
+fnaop is a lightweight and flexible Rust library designed to bring Aspect-Oriented Programming (AOP) to your Rust functions.
+By using fnaop, you can easily add pre and post function logic without modifying the core functionality of your functions,
+enabling cleaner and more maintainable code.
+"""
+
+readme = "README.md"
+keywords = ["function", "aop"]
+# https://crates.io/category_slugs
+# categories = []
+
+[dependencies]
+syn = { version = "1.0", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[lib]
+proc-macro = true
+
